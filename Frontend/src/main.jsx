@@ -1,13 +1,11 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import { Provider } from 'react-redux';
-import { store } from './store';
+import ReactDOM from 'react-dom/client';
 import './index.css'; // Import Tailwind
+import { RouterProvider } from 'react-router-dom';
+import Router from './App';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <Provider store={store}>
-   <h1>class m hyy</h1>
-    </Provider>
-  </React.StrictMode>
+ <RouterProvider router={ Router } >
+
+ </RouterProvider>
 );
